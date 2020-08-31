@@ -1,0 +1,270 @@
+.container-fluid {
+  padding: 5% 15% 2%;
+}
+
+.container-fluid-testimonial {
+  padding: 0 15%;
+}
+
+hr.large-line {
+  border: 1px solid #fff;
+  width: 30%;
+  margin-bottom: 30px;
+}
+
+hr.medium-line {
+  border: 1px solid #fff;
+  width: 20%;
+  margin-bottom: 30px;
+}
+
+hr.small-line {
+  border: 1px solid #fff;
+  width: 10%;
+
+}
+
+h2 {
+  font-family: Damion, sans-serif;
+  font-size: 7rem;
+  letter-spacing: .2rem;
+  text-align: center;
+}
+
+h3 {
+  font-family: Poppins, sans-serif;
+}
+
+h5 {
+  font-family: Poppins, sans-serif;
+  font-size: 2rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+p {
+  font-family: Poppins, sans-serif;
+}
+
+/* Nav bar */
+.navbar {
+  padding: 0 1px;
+  padding-left: 15%;
+  padding-right: 15%;
+  background-color: #F25955;
+}
+
+.nav-item {
+  padding: 0 10px;
+}
+
+.nav-link {
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-family: Poppins, sans-serif;
+}
+
+.logo {
+  width: 200px;
+}
+
+.colored-section {
+  background-color: #F5B7B1;
+  color: white;
+}
+
+.colored-section-pricing {
+  background-color: #F5B7B1;
+  color: black;
+}
+
+/* Title Section */
+#title {
+  background-color: #F5B7B1;
+  padding-bottom: 3%;
+}
+
+.food-title{
+  padding-bottom: 5%;
+}
+
+.main-logo {
+  width: 100%;
+}
+
+.title-image {
+  position: relative;
+  width: 100%;
+  padding-top: 60px;
+}
+
+.second-title {
+  font-family: Poppins, sans-serif;
+  padding: 4% 0 5%;
+  text-align: center;
+}
+
+.sustain {
+  font-size: 5rem;
+  line-height: 1.2;
+}
+
+/* Product Section */
+#product {
+  padding: 5% 15%;
+}
+
+.dog-food-row {
+  margin: auto;
+  display: inline-block;
+}
+
+.large-dog {
+  width: 45%;
+  position: relative;
+  float: left;
+}
+
+.big-food {
+  width: auto;
+  font-size: 1.2rem;
+  padding-top: 10%;
+  line-height: 2;
+}
+
+.right-dog-button {
+  text-align: right;
+}
+
+.left-dog-button {
+  z-index: 1;
+}
+
+.medium-dog {
+  width: 45%;
+  position: relative;
+  float: right;
+}
+
+.medium-food {
+  position: relative;
+  width: auto;
+  font-size: 1.2rem;
+  padding-top: 2%;
+  line-height: 2;
+}
+
+.med-dog-text {
+  padding-top: 9%;
+}
+
+.small-dog {
+  padding-top: 3%;
+  width: 43%;
+  position: relative;
+  float: left;
+}
+
+.small-food {
+  width: auto;
+  font-size: 1.2rem;
+  padding-top: 10%;
+  line-height: 2;
+}
+
+/* Testimonial Section */
+.testimonial-title {
+  padding: 8%;
+  padding-bottom: 0;
+}
+
+.carousel-item {
+  padding: 0 23% 5%;
+}
+
+.running-pup {
+  width: 100%;
+}
+
+.testimonial-text {
+  text-align: center;
+  font-size: 2rem;
+  padding: 7% 8% 0;
+}
+
+.tongue {
+  width: 100%;
+}
+
+#about {
+  padding: 5% 15%;
+}
+
+.about-text {
+  padding-top: 60px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* Banner */
+.woman-and-dog {
+  width: 100%;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding-top: 5%;
+}
+
+/* Pricing Section */
+#pricing {
+  margin-top: 35%;
+  padding: 5% 15%;
+}
+
+
+.card-body {
+  padding: 20px auto;
+
+}
+
+.card-deck{
+  padding-top: 5%;
+}
+.card {
+  align-items: center;
+  border-radius: 10%;
+  border: 0px;
+}
+
+.pricing {
+  padding-bottom: 2%;
+  color: #fff;
+}
+
+.card-title {
+  background-color: #F25955;
+  color: #fff;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.pricing-btn{
+  width: 90%;
+}
+
+/* Footer Section */
+
+#footer{
+  text-align: center;
+  font-size: 2rem;
+
+}
+
+.container-fluid-footer{
+  padding: 2% 15%;
+}
+
+.social-icon{
+  margin: 40px 30px;
+}
