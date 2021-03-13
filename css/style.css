@@ -32,18 +32,19 @@ h2 {
 }
 
 h3 {
-  font-family: Poppins, sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 h5 {
-  font-family: Poppins, sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 2rem;
+  line-height: 3rem;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
 p {
-  font-family: Poppins, sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /* Nav bar */
@@ -61,11 +62,11 @@ p {
 .nav-link {
   font-size: 1.5rem;
   font-weight: 300;
-  font-family: Poppins, sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .logo {
-  width: 200px;
+  max-width: 200px;
 }
 
 .colored-section {
@@ -81,7 +82,7 @@ p {
 /* Title Section */
 #title {
   background-color: #F5B7B1;
-  padding-bottom: 3%;
+  padding-bottom: 1.5%;
 }
 
 .food-title{
@@ -89,13 +90,18 @@ p {
 }
 
 .main-logo {
-  width: 100%;
+  max-width: 100%;
+}
+
+.main-title{
+  padding: 0;
 }
 
 .title-image {
   position: relative;
-  width: 100%;
-  padding-top: 60px;
+  max-width: 100%;
+  margin-top: 70px;
+  filter: drop-shadow(4px 6px 4px rgba(0, 0, 0, 0.48));
 }
 
 .second-title {
@@ -107,13 +113,14 @@ p {
 .sustain {
   font-size: 5rem;
   line-height: 1.2;
+  padding-right: 15px;
 }
 
-/* Product Section */
-#product {
+/*Site margins*/
+#product, #about, #pricing {
   padding: 5% 15%;
 }
-
+/* Product Section */
 .dog-food-row {
   margin: auto;
   display: inline-block;
@@ -173,17 +180,17 @@ p {
 }
 
 /* Testimonial Section */
-.testimonial-title {
-  padding: 8%;
-  padding-bottom: 0;
+
+#carousel-testimonial{
+  padding: 5%;
 }
 
 .carousel-item {
   padding: 0 23% 5%;
 }
 
-.running-pup {
-  width: 100%;
+.dog-slide-img {
+  max-width: 100%;
 }
 
 .testimonial-text {
@@ -192,13 +199,7 @@ p {
   padding: 7% 8% 0;
 }
 
-.tongue {
-  width: 100%;
-}
-
-#about {
-  padding: 5% 15%;
-}
+/*About*/
 
 .about-text {
   padding-top: 60px;
@@ -219,13 +220,11 @@ p {
 /* Pricing Section */
 #pricing {
   margin-top: 35%;
-  padding: 5% 15%;
+  padding-top: 3%;
 }
-
 
 .card-body {
   padding: 20px auto;
-
 }
 
 .card-deck{
@@ -238,15 +237,16 @@ p {
 }
 
 .pricing {
-  padding-bottom: 2%;
   color: #fff;
 }
 
 .card-title {
+  padding: 0 10px;
   background-color: #F25955;
   color: #fff;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
+  
 }
 
 .pricing-btn{
@@ -273,6 +273,26 @@ p {
 
 /**********************
 *****MEDIA QUERIES****/
+@media screen and (max-width: 991px){
+  .navbar{
+    height: 6rem;
+  }
+  #product, #about, #pricing {
+    padding: 5% 2%;
+  }
+  /*Testimonial*/
+  .container-fluid-testimonial {
+    padding: 0;
+  }
+  .carousel-item{
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  /*Footer*/
+  .container-fluid-footer{
+    padding: 0;
+  }
+}
 
 @media (hover: hover){
   .social-icon:hover{
