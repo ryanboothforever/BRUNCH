@@ -267,7 +267,7 @@ p {
   h3, h3~p{
     text-align: center;
   }
-  .dog-food-row, .card-deck{
+  .dog-food-row, .medium-food, .card-deck{
      display: flex;
      flex-direction: column;
      align-items: center;
