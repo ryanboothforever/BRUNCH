@@ -25,7 +25,7 @@ hr.small-line {
 }
 
 h2 {
-  font-family: Damion, sans-serif;
+  font-family: "Damion", sans-serif;
   font-size: 7rem;
   letter-spacing: .2rem;
   text-align: center;
@@ -123,7 +123,7 @@ p {
 /* Product Section */
 .dog-food-row {
   margin: auto;
-  display: inline-block;
+  display: block;
 }
 
 .large-dog {
@@ -132,7 +132,7 @@ p {
   float: left;
 }
 
-.big-food {
+.big-food, .small-food, .med-dog-text {
   width: auto;
   font-size: 1.2rem;
   padding-top: 10%;
@@ -153,14 +153,6 @@ p {
   float: right;
 }
 
-.medium-food {
-  position: relative;
-  width: auto;
-  font-size: 1.2rem;
-  padding-top: 2%;
-  line-height: 2;
-}
-
 .med-dog-text {
   padding-top: 9%;
 }
@@ -171,14 +163,6 @@ p {
   position: relative;
   float: left;
 }
-
-.small-food {
-  width: auto;
-  font-size: 1.2rem;
-  padding-top: 10%;
-  line-height: 2;
-}
-
 /* Testimonial Section */
 
 #carousel-testimonial{
@@ -280,6 +264,20 @@ p {
   #product, #about, #pricing {
     padding: 5% 2%;
   }
+  h3, h3~p{
+    text-align: center;
+  }
+  .dog-food-row, .card-deck{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 0 8%;
+  }
+  .small-food,
+  .med-dog-text,
+  .big-food{
+    padding-top: 2%;
+  }
   /*Testimonial*/
   .container-fluid-testimonial {
     padding: 0;
@@ -288,6 +286,11 @@ p {
     padding-left: 10%;
     padding-right: 10%;
   }
+  /*Pricing*/
+  /* .card-deck{
+    display: flex;
+
+  } */
   /*Footer*/
   .container-fluid-footer{
     padding: 0;
@@ -299,4 +302,3 @@ p {
     color: #F25955;
   }
 }
-
