@@ -259,9 +259,9 @@
     </div>
 
 
-  </section type="text/javascript">
-  <!-- Airship Snippet -->
-  <script>
+  </section>
+  <!-- Google Push Worker -->
+  <script type="text/javascript">
     if ("serviceWorker" in navigator) {
       window.addEventListener("load", function () {
         navigator.serviceWorker.register("push-worker.js").then(
@@ -280,6 +280,7 @@
       });
     }
   </script>
+  <!-- Airship Snippet -->
   <script src="js/snippet.js" type="text/javascript"></script>
   <!-- Main JS -->
   <script src="js/main.js"></script>
