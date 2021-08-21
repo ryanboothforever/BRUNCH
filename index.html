@@ -18,49 +18,6 @@
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   </link>
   <link rel="stylesheet" href="css/style.css">
-  <!-- Airship Snippet -->
-  <script type="text/javascript">
-    // 86acbd31cd7c09cf30acb66d2fbedc91daa48b86:1629223362.0137255
-    !(function (n, r, e, t, c) {
-      var i,
-        o = "Promise" in n,
-        u = {
-          then: function () {
-            return u;
-          },
-          catch: function (n) {
-            return n(new Error("Airship SDK Error: Unsupported browser")), u;
-          },
-        },
-        s = o ?
-        new Promise(function (n, r) {
-          i = function (e, t) {
-            e ? r(e) : n(t);
-          };
-        }) :
-        u;
-      (s._async_setup = function (n) {
-        if (o)
-          try {
-            i(null, n(c));
-          } catch (n) {
-            i(n);
-          }
-      }),
-      (n[t] = s);
-      var a = r.createElement("script");
-      (a.src = e),
-      (a.async = !0),
-      (a.id = "_uasdk"),
-      (a.rel = t),
-      r.head.appendChild(a);
-    })(window, document, "https://aswpsdkus.com/notify/v1/ua-sdk.min.js", "UA", {
-      vapidPublicKey: "BIByiKANzvxEdCKLi6DfOGJ3aM1fJ6IZ4v0MEXUZxeTKByzwrBx3zZbc-WwBndSsLZ9rUK7wubQsYxITQQUOVsQ=",
-      websitePushId: "web.airship.test",
-      appKey: "fDmm2SQjTJKR2ut7duxiDw",
-      token: "MTpmRG1tMlNRalRKS1IydXQ3ZHV4aUR3OndveFFVekFNaFJzSGM2UC1Rd2JpMjBWN01uRFZsc2hTTkdIWFlOLVI4S0k",
-    });
-  </script>
   <!--bootcamp: jquery and js-->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
@@ -302,8 +259,70 @@
     </div>
 
 
-  </section>
-
+  </section type="text/javascript">
+  <!-- Airship Snippet -->
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", function () {
+        navigator.serviceWorker.register("push-worker.js").then(
+          function (registration) {
+            // Registration was successful
+            console.log(
+              "ServiceWorker registration successful with scope: ",
+              registration.scope
+            );
+          },
+          function (err) {
+            // registration failed :(
+            console.log("ServiceWorker registration failed: ", err);
+          }
+        );
+      });
+    }
+  </script>
+  <script type="text/javascript">
+    // 86acbd31cd7c09cf30acb66d2fbedc91daa48b86:1629223362.0137255
+    !(function (n, r, e, t, c) {
+      var i,
+        o = "Promise" in n,
+        u = {
+          then: function () {
+            return u;
+          },
+          catch: function (n) {
+            return n(new Error("Airship SDK Error: Unsupported browser")), u;
+          },
+        },
+        s = o ?
+        new Promise(function (n, r) {
+          i = function (e, t) {
+            e ? r(e) : n(t);
+          };
+        }) :
+        u;
+      (s._async_setup = function (n) {
+        if (o)
+          try {
+            i(null, n(c));
+          } catch (n) {
+            i(n);
+          }
+      }),
+      (n[t] = s);
+      var a = r.createElement("script");
+      (a.src = e),
+      (a.async = !0),
+      (a.id = "_uasdk"),
+      (a.rel = t),
+      r.head.appendChild(a);
+    })(window, document, "https://aswpsdkus.com/notify/v1/ua-sdk.min.js", "UA", {
+      vapidPublicKey: "BIByiKANzvxEdCKLi6DfOGJ3aM1fJ6IZ4v0MEXUZxeTKByzwrBx3zZbc-WwBndSsLZ9rUK7wubQsYxITQQUOVsQ=",
+      websitePushId: "web.airship.test",
+      appKey: "fDmm2SQjTJKR2ut7duxiDw",
+      token: "MTpmRG1tMlNRalRKS1IydXQ3ZHV4aUR3OndveFFVekFNaFJzSGM2UC1Rd2JpMjBWN01uRFZsc2hTTkdIWFlOLVI4S0k",
+    });
+  </script>
+  <!-- Main JS -->
   <script src="js/main.js"></script>
 
 </body>
